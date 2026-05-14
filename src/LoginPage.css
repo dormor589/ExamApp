@@ -1,0 +1,145 @@
+/* Full-page background */
+.login-bg {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1a237e 0%, #283593 40%, #3949ab 100%);
+  padding: 1rem;
+}
+
+/* Card */
+.login-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 420px;
+  padding: 2.5rem 2.5rem 2rem;
+}
+
+/* Header */
+.login-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.login-logo {
+  font-size: 3rem;
+  line-height: 1;
+  margin-bottom: 0.75rem;
+}
+
+.login-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1a237e;
+  margin: 0 0 0.35rem;
+}
+
+.login-subtitle {
+  font-size: 0.9rem;
+  color: #757575;
+  margin: 0;
+}
+
+/* Form */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.login-error {
+  background: #ffebee;
+  color: #c62828;
+  border: 1px solid #ef9a9a;
+  border-radius: 8px;
+  padding: 0.65rem 0.9rem;
+  font-size: 0.85rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-group label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #424242;
+}
+
+.form-group input {
+  padding: 0.7rem 0.9rem;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: #212121;
+  background: #fafafa;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  outline: none;
+}
+
+.form-group input:focus {
+  border-color: #3949ab;
+  box-shadow: 0 0 0 3px rgba(57, 73, 171, 0.15);
+  background: #fff;
+}
+
+.form-group input::placeholder {
+  color: #bdbdbd;
+}
+
+/* Remember / forgot row */
+.form-footer-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.83rem;
+}
+
+.remember-label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #616161;
+  cursor: pointer;
+  user-select: none;
+}
+
+.forgot-link {
+  color: #3949ab;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+}
+
+/* Login button */
+.login-btn {
+  margin-top: 0.4rem;
+  padding: 0.8rem;
+  background: linear-gradient(135deg, #3949ab, #1a237e);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.1s;
+  letter-spacing: 0.02em;
+}
+
+.login-btn:hover {
+  opacity: 0.92;
+  transform: translateY(-1px);
+}
+
+.login-btn:active {
+  transform: translateY(0);
+  opacity: 1;
+}

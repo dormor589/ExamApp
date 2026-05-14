@@ -1,7 +1,9 @@
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import './LoginPage.css'
 
 function LoginPage() {
+  const navigate = useNavigate()
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [error, setError] = useState('')
@@ -13,8 +15,7 @@ function LoginPage() {
       return
     }
     setError('')
-    // TODO: wire up real auth
-    alert(`Logging in as ${email}`)
+    navigate('/questions')
   }
 
   return (

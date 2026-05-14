@@ -1,0 +1,248 @@
+.qp-bg {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a237e 0%, #283593 40%, #3949ab 100%);
+  padding: 1.5rem 1rem 3rem;
+}
+
+.qp-container {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* Header */
+.qp-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.qp-logo {
+  font-size: 2.2rem;
+  line-height: 1;
+}
+
+.qp-header-text {
+  flex: 1;
+}
+
+.qp-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 0.15rem;
+}
+
+.qp-subtitle {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0;
+}
+
+.qp-logout {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
+  border-radius: 8px;
+  padding: 0.45rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.qp-logout:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Progress bar */
+.qp-progress-bar {
+  height: 6px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+}
+
+.qp-progress-fill {
+  height: 100%;
+  background: #69f0ae;
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+/* Result banner */
+.qp-result-banner {
+  border-radius: 10px;
+  padding: 0.85rem 1.1rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 1.25rem;
+}
+
+.qp-result-banner.pass {
+  background: #e8f5e9;
+  color: #2e7d32;
+  border: 1px solid #a5d6a7;
+}
+
+.qp-result-banner.fail {
+  background: #fff3e0;
+  color: #e65100;
+  border: 1px solid #ffcc80;
+}
+
+/* Question list */
+.qp-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.qp-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 1.25rem 1.4rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.qp-question-text {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a237e;
+  margin: 0 0 1rem;
+  line-height: 1.45;
+}
+
+.qp-q-num {
+  color: #3949ab;
+  margin-right: 0.2rem;
+}
+
+/* Options */
+.qp-options {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.qp-option {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.6rem 0.9rem;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 8px;
+  background: #fafafa;
+  font-size: 0.93rem;
+  color: #424242;
+  cursor: pointer;
+  text-align: left;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.qp-option:hover:not(:disabled) {
+  border-color: #3949ab;
+  background: #f0f2ff;
+}
+
+.qp-option.chosen {
+  border-color: #3949ab;
+  background: #e8eaf6;
+  color: #1a237e;
+  font-weight: 600;
+}
+
+.qp-option.correct {
+  border-color: #43a047;
+  background: #e8f5e9;
+  color: #2e7d32;
+  font-weight: 600;
+}
+
+.qp-option.wrong {
+  border-color: #e53935;
+  background: #ffebee;
+  color: #b71c1c;
+  font-weight: 600;
+}
+
+.qp-option:disabled {
+  cursor: default;
+}
+
+.qp-opt-letter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: #e8eaf6;
+  color: #3949ab;
+  font-size: 0.75rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.qp-option.chosen .qp-opt-letter {
+  background: #3949ab;
+  color: #fff;
+}
+
+.qp-option.correct .qp-opt-letter {
+  background: #43a047;
+  color: #fff;
+}
+
+.qp-option.wrong .qp-opt-letter {
+  background: #e53935;
+  color: #fff;
+}
+
+/* Footer */
+.qp-footer {
+  margin-top: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.qp-submit-btn {
+  padding: 0.85rem 2.5rem;
+  background: linear-gradient(135deg, #69f0ae, #00c853);
+  color: #1b5e20;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.1s;
+  letter-spacing: 0.02em;
+}
+
+.qp-submit-btn:hover:not(:disabled) {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.qp-submit-btn:disabled {
+  background: rgba(255, 255, 255, 0.25);
+  color: rgba(255, 255, 255, 0.5);
+  cursor: not-allowed;
+  transform: none;
+}
+
+.qp-hint {
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.65);
+  margin: 0;
+}
